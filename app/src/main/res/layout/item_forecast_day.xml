@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_forecast"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_ellipse" />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:id="@+id/ln_temp"
+        app:layout_constraintStart_toStartOf="@+id/iv_forecast"
+        app:layout_constraintTop_toBottomOf="@+id/iv_forecast"
+        app:layout_constraintEnd_toEndOf="@id/iv_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_max_temperature_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="normal"
+
+            app:layout_constraintStart_toStartOf="@+id/ic_weather_status"
+            app:layout_constraintTop_toBottomOf="@+id/ic_weather_status"
+            tools:text="85.5" />
+        <TextView
+            android:id="@+id/tv_min_temperature_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="normal"
+
+            app:layout_constraintBottom_toBottomOf="@id/tv_max_temperature_degree"
+            app:layout_constraintTop_toTopOf="@id/tv_max_temperature_degree"
+            app:layout_constraintStart_toEndOf="@+id/tv_max_temperature_degree"
+            tools:text=" / 85.5" />
+
+        <TextView
+            android:id="@+id/tv_unit_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@id/tv_min_temperature_degree"
+            app:layout_constraintTop_toTopOf="@id/tv_min_temperature_degree"
+            app:layout_constraintStart_toEndOf="@+id/tv_min_temperature_degree"
+
+            android:text=" °F" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ln_temp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="@+id/ln_temp"
+        app:layout_constraintEnd_toEndOf="@+id/ln_temp"
+        tools:text="Today"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

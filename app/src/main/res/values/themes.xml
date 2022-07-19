@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Weather" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/base_color</item>
+        <item name="fontFamily">@font/sf_pro_regular</item>
+        <item name="colorPrimaryVariant">@color/blacktranspentent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/base_color</item>
+        <item name="colorSecondaryVariant">@color/base_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+
+    <style name="title_text_view">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:textColor">@color/base_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_view">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:textColor">@color/gery_color</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+
+    <style name="name_movies">
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/gery_color</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>

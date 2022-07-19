@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">"Weather "</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">NAME</string>
+    <string name="events">EVENTS</string>
+    <string name="series">SERIES</string>
+    <string name="comics">COMICS</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="Details">DETAILS</string>
+    <string name="fehrentit">°F</string>
+    <string name="it_is">it\'s a </string>
+    <string name="day"> day</string>
+    <string name="mph"> mph </string>
+    <string name="https">https:</string>
+    <string name="percentage"> %</string>
+</resources>
